@@ -4,7 +4,7 @@ resource "aws_lb" "my_alb" {
 
   load_balancer_type = "application"
   security_groups    = [aws_security_group.my_alb_sg.id]
-  subnets            = [var.public_subnet_id1, var.public_subnet_id2]
+  subnets            = [var.public_subnet_id1, var.public_subnet_id2, var.private_subnet_id]
 
  enable_cross_zone_load_balancing = true
 
