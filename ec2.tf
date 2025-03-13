@@ -4,6 +4,5 @@ module "ec2_instance" {
   name = "ec2demo"
 
   instance_type          = "t2.micro"
-  key_name               = "awskey"
 
 }
