@@ -1,5 +1,5 @@
 resource "aws_instance" "my_private-ec2" {
-  ami           = "ami-0d0f28110d16ee7d6"
+  ami           = var.ami_id
   instance_type = var.instance_type
   subnet_id     = var.private_subnet_id
 
