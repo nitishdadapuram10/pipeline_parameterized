@@ -7,11 +7,10 @@ resource "aws_instance" "my_private_ec2" {
 
 
   user_data = <<-EOF
-              #!/bin/bash
-              sudo yum install httpd -y
+              
+              
               echo "Welcome to Cloud" | sudo tee /var/www/html/index.html
-              sudo systemctl start httpd
-              sudo systemctl enable httpd
+              
               EOF
 
   tags = {
